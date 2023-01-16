@@ -1,0 +1,37 @@
+package ejerciciotema9;
+
+public class Main {
+    public static void main (String [] args) {
+    Cliente cliente= new Cliente ();
+    cliente.Nombre = "Matias";
+    cliente.Edad = 32;
+    cliente.Telefono = 1136064742;
+    cliente.credito= 180;
+    
+
+    Trabajador trabajador= new Trabajador ();
+    trabajador.Nombre = "Juan";
+    trabajador.Edad = 38;
+    trabajador.Telefono = 14875345;
+    trabajador.salario= 100000;
+    
+    }
+
+
+class Persona {
+   String Nombre;
+   int Edad;
+   int Telefono;
+}
+
+class Cliente extends Persona {
+    int credito;
+
+}
+
+class Trabajador extends Persona {
+    int salario;
+
+}
+
+}
